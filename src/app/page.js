@@ -11,6 +11,8 @@ export default function Home() {
       <CategorySearch/>
 
       {/* category section */}
+
+      
     </div>
   );
 }

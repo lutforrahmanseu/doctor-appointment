@@ -8,6 +8,8 @@ const doctorCategories = [
           experience: "10 years",
           contact: "emily.carter@example.com",
           location: "New York, NY",
+          image:'/doctor1.png'
+          
         },
         {
           name: "Dr. Michael Brown",
@@ -15,6 +17,7 @@ const doctorCategories = [
           experience: "8 years",
           contact: "michael.brown@example.com",
           location: "Los Angeles, CA",
+          image:'/doctor2.png'
         },
         {
           name: "Dr. Sarah Parker",
@@ -22,6 +25,7 @@ const doctorCategories = [
           experience: "12 years",
           contact: "sarah.parker@example.com",
           location: "San Francisco, CA",
+          image:'/doctor3.png'
         },
         {
           name: "Dr. Robert Davis",
@@ -29,6 +33,7 @@ const doctorCategories = [
           experience: "7 years",
           contact: "robert.davis@example.com",
           location: "Chicago, IL",
+           image:'/doctor6.png'
         },
         {
           name: "Dr. Linda Johnson",
@@ -36,6 +41,7 @@ const doctorCategories = [
           experience: "9 years",
           contact: "linda.johnson@example.com",
           location: "Boston, MA",
+          image:'/doctor5.png'
         },
       ],
     },
@@ -48,6 +54,7 @@ const doctorCategories = [
           experience: "15 years",
           contact: "william.harris@example.com",
           location: "Chicago, IL",
+         
         },
         {
           name: "Dr. Sophia Johnson",
