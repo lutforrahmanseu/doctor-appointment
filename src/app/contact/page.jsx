@@ -20,7 +20,7 @@ export default function ContactUs() {
         </div>
 
         {/* Email Input */}
-        <div className="animate__animated animate__fadeInUp animate__delay-1s"> {/* Delay for staggered animation */}
+        <div className="animate__animated animate__fadeInUp animate__delay-0.3s"> {/* Delay for staggered animation */}
           <label htmlFor="email" className="block text-sm font-medium text-gray-700">
             Email Address
           </label>
@@ -28,7 +28,7 @@ export default function ContactUs() {
         </div>
 
         {/* Subject Input */}
-        <div className="animate__animated animate__fadeInUp animate__delay-2s">
+        <div className="animate__animated animate__fadeInUp animate__delay-0.3s">
           <label htmlFor="subject" className="block text-sm font-medium text-gray-700">
             Subject
           </label>
@@ -36,7 +36,7 @@ export default function ContactUs() {
         </div>
 
         {/* Message Textarea */}
-        <div className="animate__animated animate__fadeInUp animate__delay-3s">
+        <div className="animate__animated animate__fadeInUp animate__delay-0.4s">
           <label htmlFor="message" className="block text-sm font-medium text-gray-700">
             Message
           </label>
@@ -44,7 +44,7 @@ export default function ContactUs() {
         </div>
 
         {/* Submit Button */}
-        <div className="text-center animate__animated animate__zoomIn animate__delay-4s">
+        <div className="text-center animate__animated animate__zoomIn animate__delay-0.8s">
           <Button type="submit" className="w-full">
             Send Message
           </Button>
