@@ -34,7 +34,7 @@ export default function CategoryList({ selectedCategory, searchTerm }) {
 
   // Handle Book Now button click
   const handleBookNowClick = (doctor) => {
-    router.push(`/booknow?doctorId=${encodeURIComponent(doctor.name)}`);
+    router.push(`/booknow?doctorId=${doctor.name}`);
   };
 
   return (

@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/card";
 import doctorCategories from "@/lib/data";
 import Image from "next/image";
-import Modal from "../_components/Modal";
+import Modal from "../components/Modal";
 
 export default function DoctorExplore() {
   const [searchTerm, setSearchTerm] = useState("");

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter} from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
@@ -17,19 +17,15 @@ const BookNow = () => {
     message: "",
   });
   const router = useRouter();
-  const searchParams = useSearchParams(); 
+ 
 
   useEffect(() => {
-    
-    const doctorId = searchParams.get("doctorId");
-    if (doctorId) {
-      
-      const foundDoctor = doctorCategories
+    const foundDoctor = doctorCategories
         .flatMap((category) => category.doctors)
-        .find((doc) => doc.name === decodeURIComponent(doctorId));
+        .find((doc) => doc.name === doc.name);
       setDoctor(foundDoctor);
-    }
-  }, [searchParams]);
+   
+  }, []);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;

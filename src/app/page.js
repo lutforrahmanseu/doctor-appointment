@@ -1,5 +1,5 @@
-import CategorySearch from "./_components/CategorySearch";
-import Hero from "./_components/Hero";
+import CategorySearch from "./components/CategorySearch";
+import Hero from "./components/Hero";
 
 export default function Home() {
   return (
