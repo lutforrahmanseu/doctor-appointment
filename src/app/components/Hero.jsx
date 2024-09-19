@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import React from "react";
 import 'animate.css'; // Importing animate.css
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -34,7 +35,7 @@ export default function Hero() {
             </p>
 
             <Button className="mt-10 animate__animated animate__bounceIn"> {/* Adding bounceIn animation to the button */}
-              Explore Now
+              <Link href="/explore">Explore</Link>
             </Button>
           </div>
         </div>

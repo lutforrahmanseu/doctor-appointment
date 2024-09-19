@@ -76,7 +76,7 @@ export default function CategorySearch() {
             onChange={handleSearchChange}
           />
           <Button type="submit">
-            <Search className="h-5 w-5 mr-2" /> Submit
+            <Search className="h-5 w-5 mr-2" /> Search
           </Button>
         </div>
 

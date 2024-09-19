@@ -42,7 +42,7 @@ const BookNow = () => {
   };
 
   if (!doctor) {
-    return <p>Loading...</p>;
+    return <p className="text-center">Loading...</p>;
   }
 
   return (
@@ -60,7 +60,7 @@ const BookNow = () => {
             height={300}
           />
         </div>
-        {/* Booking Form */}
+        
         <div className="w-full md:w-2/3 md:pl-6">
           <form onSubmit={handleSubmit}>
             <Input
