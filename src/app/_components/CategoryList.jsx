@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import doctorCategories from "@/lib/data";
 import Image from "next/image";
 import Modal from "./Modal";
+import 'animate.css';  // Import Animate.css
 
 export default function CategoryList({ selectedCategory, searchTerm }) {
   // Modal state
@@ -30,14 +31,14 @@ export default function CategoryList({ selectedCategory, searchTerm }) {
         );
 
         return (
-          <div key={category.categoryName} className="mt-6 ">
-            <h3 className="text-xl font-bold">
+          <div key={category.categoryName} className="mt-6">
+            <h3 className="text-xl font-bold animate__animated animate__fadeInLeft">
               {category.categoryName} <span className="text-primary">Doctors</span>
             </h3>
             {filteredDoctors.length > 0 ? (
               <ul className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
                 {filteredDoctors.map((doctor, index) => (
-                  <Card key={index}>
+                  <Card key={index} className="animate__animated animate__fadeInUp"> {/* Adding animation */}
                     <CardHeader>
                       <Image
                         src={doctor.image}
@@ -60,7 +61,7 @@ export default function CategoryList({ selectedCategory, searchTerm }) {
                 ))}
               </ul>
             ) : (
-              <p className="text-red-600 my-10 font-medium text-center ">
+              <p className="text-red-600 my-10 font-medium text-center animate__animated animate__shakeX">
                 No doctors found for this category
               </p>
             )}
@@ -71,12 +72,12 @@ export default function CategoryList({ selectedCategory, searchTerm }) {
       {/* Modal for showing doctor details */}
       {showModal && selectedDoctor && (
         <Modal onClose={() => setShowModal(false)}>
-          <div className="p-6">
+          <div className="p-6 animate__animated animate__fadeIn"> {/* Modal fade-in animation */}
             <Image src={selectedDoctor.image} alt={selectedDoctor.name} width={400} height={400} />
             
             <h2 className="text-2xl font-bold mt-4">{selectedDoctor.name}</h2>
             <p>{selectedDoctor.description}</p>
-            <Button className="mt-4" onClick={() => setShowModal(false)}>
+            <Button className="mt-4 animate__animated animate__fadeInUp" onClick={() => setShowModal(false)}>
               Close
             </Button>
           </div>
